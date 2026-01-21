@@ -1,0 +1,43 @@
+# Source files
+nodes/
+credentials/
+
+# Development files
+.eslintrc.js
+.prettierrc
+tsconfig.json
+jest.config.js
+
+# Test files
+test/
+coverage/
+*.test.ts
+*.spec.ts
+
+# Build artifacts
+*.tsbuildinfo
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+
+# Scripts (development only)
+scripts/
+
+# Documentation source (if any)
+docs/
+
+# Miscellaneous
+*.log
+tmp/
+temp/
