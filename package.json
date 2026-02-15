@@ -1,91 +1,91 @@
 {
-	"name": "n8n-nodes-lmax",
-	"version": "1.0.0",
-	"description": "A comprehensive n8n community node for LMAX Group trading platform providing 10 resources and 50+ operations for institutional FX, CFD, and cryptocurrency trading automation.",
-	"license": "BUSL-1.1",
-	"author": {
-		"name": "Velocity BPA",
-		"email": "licensing@velobpa.com",
-		"url": "https://velobpa.com"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/Velocity-BPA/n8n-nodes-lmax.git"
-	},
-	"homepage": "https://github.com/Velocity-BPA/n8n-nodes-lmax",
-	"bugs": {
-		"url": "https://github.com/Velocity-BPA/n8n-nodes-lmax/issues"
-	},
-	"keywords": [
-		"n8n",
-		"n8n-community-node-package",
-		"n8n-node",
-		"lmax",
-		"trading",
-		"forex",
-		"fx",
-		"cfd",
-		"cryptocurrency",
-		"crypto",
-		"institutional",
-		"exchange",
-		"market-data",
-		"orders",
-		"positions",
-		"automation"
-	],
-	"main": "dist/nodes/Lmax/Lmax.node.js",
-	"n8n": {
-		"n8nNodesApiVersion": 1,
-		"credentials": [
-			"dist/credentials/LmaxApi.credentials.js"
-		],
-		"nodes": [
-			"dist/nodes/Lmax/Lmax.node.js",
-			"dist/nodes/Lmax/LmaxTrigger.node.js"
-		]
-	},
-	"scripts": {
-		"build": "tsc && npm run copy:icons",
-		"copy:icons": "copyfiles -u 1 \"nodes/**/*.svg\" dist/",
-		"dev": "tsc --watch",
-		"lint": "eslint . --ext .ts",
-		"lint:fix": "eslint . --ext .ts --fix",
-		"format": "prettier --write \"**/*.ts\"",
-		"format:check": "prettier --check \"**/*.ts\"",
-		"test": "jest",
-		"test:coverage": "jest --coverage",
-		"prepublishOnly": "npm run build",
-		"clean": "rimraf dist"
-	},
-	"engines": {
-		"node": ">=18.0.0"
-	},
-	"files": [
-		"dist"
-	],
-	"dependencies": {
-		"xml2js": "^0.6.2"
-	},
-	"devDependencies": {
-		"@types/jest": "^29.5.12",
-		"@types/node": "^20.11.24",
-		"@types/xml2js": "^0.4.14",
-		"@typescript-eslint/eslint-plugin": "^7.1.0",
-		"@typescript-eslint/parser": "^7.1.0",
-		"copyfiles": "^2.4.1",
-		"eslint": "^8.57.0",
-		"eslint-config-prettier": "^9.1.0",
-		"eslint-plugin-n8n-nodes-base": "^1.16.1",
-		"eslint-plugin-prettier": "^5.1.3",
-		"jest": "^29.7.0",
-		"n8n-workflow": "^1.30.0",
-		"prettier": "^3.2.5",
-		"rimraf": "^5.0.5",
-		"ts-jest": "^29.1.2",
-		"typescript": "^5.3.3"
-	},
-	"peerDependencies": {
-		"n8n-workflow": ">=1.0.0"
-	}
+  "name": "n8n-nodes-lmax",
+  "version": "1.0.0",
+  "description": "A comprehensive n8n community node for LMAX Group trading platform providing 10 resources and 50+ operations for institutional FX, CFD, and cryptocurrency trading automation.",
+  "license": "BUSL-1.1",
+  "author": {
+    "name": "Velocity BPA",
+    "email": "licensing@velobpa.com",
+    "url": "https://velobpa.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Velocity-BPA/n8n-nodes-lmax.git"
+  },
+  "homepage": "https://github.com/Velocity-BPA/n8n-nodes-lmax",
+  "bugs": {
+    "url": "https://github.com/Velocity-BPA/n8n-nodes-lmax/issues"
+  },
+  "keywords": [
+    "n8n",
+    "n8n-community-node-package",
+    "n8n-node",
+    "lmax",
+    "trading",
+    "forex",
+    "fx",
+    "cfd",
+    "cryptocurrency",
+    "crypto",
+    "institutional",
+    "exchange",
+    "market-data",
+    "orders",
+    "positions",
+    "automation"
+  ],
+  "main": "dist/nodes/Lmax/Lmax.node.js",
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/LmaxApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/Lmax/Lmax.node.js",
+      "dist/nodes/Lmax/LmaxTrigger.node.js"
+    ]
+  },
+  "scripts": {
+    "build": "tsc && npm run copy:icons",
+    "copy:icons": "copyfiles -u 1 \"nodes/**/*.svg\" dist/",
+    "dev": "tsc --watch",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "format": "prettier --write \"**/*.ts\"",
+    "format:check": "prettier --check \"**/*.ts\"",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "prepublishOnly": "npm run build",
+    "clean": "rimraf dist"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "xml2js": "^0.6.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.11.24",
+    "@types/xml2js": "^0.4.14",
+    "@typescript-eslint/eslint-plugin": "^7.1.0",
+    "@typescript-eslint/parser": "^7.1.0",
+    "copyfiles": "^2.4.1",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-n8n-nodes-base": "^1.16.1",
+    "eslint-plugin-prettier": "^5.1.3",
+    "jest": "^29.7.0",
+    "n8n-workflow": "*",
+    "prettier": "^3.2.5",
+    "rimraf": "^5.0.5",
+    "ts-jest": "^29.1.2",
+    "typescript": "^5.3.3"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  }
 }
